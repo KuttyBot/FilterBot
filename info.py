@@ -13,8 +13,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '1305232'))
-API_HASH = environ.get('API_HASH', '71b917e302a36826c54988990dc7a789')
+API_ID = int(environ.get('API_ID', '28455032'))
+API_HASH = environ.get('API_HASH', '28dbb18229d7701a856c42a46083cccf')
 BOT_TOKEN = environ.get('BOT_TOKEN', "5889574686:AAF6jEFEijN_UWvPBp5YNWC-jztmWbna4jc")
 
 # Bot settings
@@ -27,8 +27,8 @@ MELCOW_VID = environ.get("MELCOW_VID", "https://graph.org/file/280c5e83f4ec2cf83
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a1b9.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '942140808').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001274359769 -1001635253104').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1572929036').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002009707466 -1002024901290').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1021404718 1103583723').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL', '-1002123323399')
@@ -42,8 +42,8 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'False')), False)
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://cluster0:password17@cluster0.pvxupo5.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "CentralLinks")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://tmz:1512@cluster7.zqbocve.mongodb.net/?retryWrites=true&w=majority&appName=Cluster7")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster7")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
